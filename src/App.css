@@ -23,8 +23,18 @@
     border: 1px solid #fe9900;
 }
 
+.board {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    color: white;
+    margin-bottom: 2rem;
+}
+
 @media (min-width: 768px) {
     .title {
-        font-size: 2.5rem;
+        font-size: 2.35rem;
     }
 }

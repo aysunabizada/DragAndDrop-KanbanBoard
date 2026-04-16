@@ -1,10 +1,11 @@
 .column {
     width: 100%;
-    height: 26rem;
+    height: 25rem;
     background: #30364F;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     overflow-y: auto;
+    position: relative;
 }
 
 .column::-webkit-scrollbar {
@@ -13,11 +14,14 @@
 
 .column-header {
     background: #fff7ed;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
+    border-top: 2px #f59e0b solid;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 12px;
+    padding: 12px;
     margin-bottom: 15px;
     color: black;
 }
@@ -50,80 +54,6 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
-
-.task-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: capitalize;
-    background: #222636;
-    font-size: .9em;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: grab;
-    transition: 0.2s;
-    border: 1px solid #222636;
-}
-
-.task-card:active {
-    cursor: grabbing;
-}
-
-.task-card:hover {
-    border: 1px solid #fe9900;
-    background: #2d303c;
-}
-
-.edit-card{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.edit-input {
-    background: transparent;
-    border: none;
-    outline: none;
-    color: white;
-    width: 100%;
-}
-
-.task-text {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.task-icons {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.btn-icon {
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    cursor: pointer;
-    transition: .1s;
-    font-size: 1.1em;
-}
-
-.edit:hover {
-    color: #3333ec;
-}
-
-.delete:hover {
-    color: #f80f0f;
-}
-
-.save:hover{
-    color: rgb(5, 176, 5);
 }
 
 @media (min-width: 768px) {

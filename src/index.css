@@ -17,18 +17,3 @@ main {
         linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
     background-size: 100% 30px;
 }
-
-.shadow {
-    box-shadow: #fe98002c 0px 8px 25px;
-    border: 1px solid #fe9900;
-}
-
-.board {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 100%;
-    color: white;
-    margin-bottom: 2rem;
-}

@@ -1,0 +1,74 @@
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-transform: unset; */
+    background: #222636;
+    font-size: .9em;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: grab;
+    transition: 0.2s;
+    border: 1px solid #222636;
+}
+
+.task-card:active {
+    cursor: grabbing;
+}
+
+.task-card:hover {
+    border: 1px solid #fe9900;
+    background: #2d303c;
+}
+
+.edit-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.edit-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-size: 1em;
+}
+
+.task-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.task-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    transition: .1s;
+    font-size: 1.1em;
+}
+
+.edit:hover {
+    color: #3333ec;
+}
+
+.delete:hover {
+    color: #f80f0f;
+}
+
+.save:hover{
+    color: rgb(5, 176, 5);
+}

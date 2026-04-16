@@ -115,6 +115,8 @@ export function reducer(state, action) {
         case "MOVE_TASK": {
             const { from, to, item } = action.payload;
 
+            if (from === to) return state;
+
             return {
                 ...state,
                 columns: {
