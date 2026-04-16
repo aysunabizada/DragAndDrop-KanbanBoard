@@ -1,0 +1,41 @@
+.input-bar {
+    display: flex;
+    max-width: 40rem;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+}
+
+.input-bar input {
+    padding: 20px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.input-bar select {
+    border: none;
+    border-left: 1px solid #ddd;
+    padding: 0 10px;
+    margin-right: 10px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-bar button {
+    background: #f59e0b;
+    color: white;
+    border: none;
+    padding: 0 1.2rem;
+    font-size: .95em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .input-bar {
+        min-width: 40rem;
+    }
+}
